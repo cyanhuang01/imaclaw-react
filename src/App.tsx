@@ -19,7 +19,20 @@ function App() {
   return (
     <div className="app">
       <div className="background">
-        <GradientBlinds gradientColors={['#7B61FF', '#E066FF']} blindCount={16} noise={0.15} />
+        <GradientBlinds 
+          gradientColors={['#FF9FFC', '#5227FF']}
+          angle={0}
+          noise={0.3}
+          blindCount={12}
+          blindMinWidth={50}
+          spotlightRadius={0.5}
+          spotlightSoftness={1}
+          spotlightOpacity={1}
+          mouseDampening={0.15}
+          distortAmount={0}
+          shineDirection="left"
+          mixBlendMode="lighten"
+        />
       </div>
 
       <nav className="nav">
